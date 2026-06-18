@@ -1,0 +1,8 @@
+{
+    "java.jdt.ls.vmArgs": "-javaagent:/home/fabri/.m2/repository/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar",
+    "sonarlint.connectedMode.project": {
+        "connectionId": "fabrialekz",
+        "projectKey": "FabriAlekz_system_inventory"
+    },
+    "java.compile.nullAnalysis.mode": "automatic"
+}
