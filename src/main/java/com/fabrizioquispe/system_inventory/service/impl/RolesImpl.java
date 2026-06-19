@@ -50,7 +50,7 @@ public class RolesImpl implements RolesService {
         return rolesRepository.findById(id)
                 .flatMap(existingRole -> {
                     existingRole.setType(role.getType());
-                    existingRole.setDescripttion(role.getDescripttion());
+                    existingRole.setDescription(role.getDescription());
                     return rolesRepository.save(existingRole);
                 })
                 .map(updatedRole -> {
@@ -88,7 +88,7 @@ public class RolesImpl implements RolesService {
         return rolesRepository.findAll()
         .filter(rol ->
             (filter.getType() == null || Objects.equals(rol.getType(), filter.getType()))
-            && (filter.getDescripttion() == null || Objects.equals(rol.getDescripttion(), filter.getDescripttion()))
+            && (filter.getDescription() == null || Objects.equals(rol.getDescription(), filter.getDescription()))
             && (filter.getStatus() == null || Objects.equals(rol.getStatus(), filter.getStatus()))
             && (filter.getCreatedAt() == null || Objects.equals(rol.getCreatedAt(), filter.getCreatedAt()))
         );

@@ -18,8 +18,8 @@ public class RolesEntity {
     private Integer idRol;
     @Column("type")
     private String type;
-    @Column("descripttion")
-    private String descripttion;
+    @Column("description")
+    private String description;
     @Column("created_at")
     private LocalDateTime createdAt;
     @Column("status")

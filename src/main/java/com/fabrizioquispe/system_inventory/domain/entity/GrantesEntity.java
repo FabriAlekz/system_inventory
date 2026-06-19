@@ -30,5 +30,5 @@ public class GrantesEntity {
     private LocalDateTime createdAt;
 
     @Column("status")
-    private Integer status;
+    private Integer status; 
 }

@@ -1,5 +1,6 @@
 package com.fabrizioquispe.system_inventory.api.controller;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -41,8 +42,13 @@ public class GrantsController {
     }
 
     @PutMapping("/update/{id}")
-    public Mono<ResponseHandler<GrantesEntity>> updateGrant(@PathVariable Integer id,@RequestBody GrantesEntity grant) {
+    public Mono<ResponseHandler<GrantesEntity>> updateGrant(@PathVariable Integer id,
+            @RequestBody GrantesEntity grant) {
         return grantsService.updateGrant(id, grant);
     }
 
+    @DeleteMapping("/delete/{id}")
+    public Mono<ResponseHandler<GrantesEntity>> deleteGrant(@PathVariable Integer id) {
+        return grantsService.deleteGrant(id);
+    }
 }

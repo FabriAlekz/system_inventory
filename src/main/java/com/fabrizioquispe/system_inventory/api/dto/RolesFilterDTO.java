@@ -9,7 +9,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class RolesFilterDTO {
     private String type;
-    private String descripttion;
+    private String description;
     private LocalDateTime createdAt;
     private Integer status;
 }
