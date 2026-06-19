@@ -1,0 +1,9 @@
+com/fabrizioquispe/system_inventory/domain/entity/RolesEntity.class
+com/fabrizioquispe/system_inventory/SystemInventoryApplication.class
+com/fabrizioquispe/system_inventory/service/RolesService.class
+com/fabrizioquispe/system_inventory/infraestructure/RolesRepository.class
+com/fabrizioquispe/system_inventory/api/controller/RolesController.class
+com/fabrizioquispe/system_inventory/api/dto/ResponseHandler.class
+com/fabrizioquispe/system_inventory/domain/constant/DataConstant.class
+com/fabrizioquispe/system_inventory/service/impl/RolesImpl.class
+com/fabrizioquispe/system_inventory/api/dto/RolesFilterDTO.class
