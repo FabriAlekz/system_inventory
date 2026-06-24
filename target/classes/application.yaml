@@ -8,8 +8,8 @@ spring:
     compose:
       enabled: false
   r2dbc:
-    url: r2dbc:postgresql://127.0.0.1:5432/system_inventory
-    username: ${DB_USERNAME:alekzander}
+    url: r2dbc:postgresql://localhost/postgres
+    username: ${DB_USERNAME:postgres}
     password: ${DB_PASSWORD:MRFabri2002@@}
 logging:
   level:

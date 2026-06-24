@@ -6,4 +6,5 @@ public class DataConstant {
     public final static String TABLE_GRANTES = "grants";
     public final static String TABLE_SUSCRIPTION = "suscription";
     public final static String TABLE_SUCURSALES = "sucursal";
+    public final static String TABLE_USERS = "users";
 }
